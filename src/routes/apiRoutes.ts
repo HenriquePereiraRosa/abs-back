@@ -24,7 +24,7 @@ export class Routes {
         // ToDo get, put and delete a specific resource
         app.route('/resource/:id')
             // get specific resource
-            .get(this.resourceController.getContactWithID)
+            .get(this.resourceController.getResourceWithID)
             // PUT endpoint
             .put(this.resourceController.updateResource)
             // DELETE endpoint

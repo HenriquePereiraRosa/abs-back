@@ -41,7 +41,7 @@ export class ResourceController {
         });
     }
     // Get specific resource
-    public getContactWithID(req: Request, res: Response) {
+    public getResourceWithID(req: Request, res: Response) {
         Resource.findById(req.params.id, (err, resource) => {
             if (err) {
                 res.send(err);
